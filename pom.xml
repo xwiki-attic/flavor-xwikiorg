@@ -49,7 +49,7 @@
     </repository>
   </distributionManagement>
   <properties>
-    <platform.version>${project.version}</platform.version>
+    <platform.version>${commons.version}</platform.version>
     <!-- Don't run CLIRR here since there's no Java code. -->
     <xwiki.clirr.skip>true</xwiki.clirr.skip>
   </properties>
