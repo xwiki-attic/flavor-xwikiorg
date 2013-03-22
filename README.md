@@ -1,0 +1,1 @@
+The XWiki flavor used on xwiki.org
