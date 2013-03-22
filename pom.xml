@@ -54,7 +54,8 @@
     <xwiki.clirr.skip>true</xwiki.clirr.skip>
   </properties>
   <modules>
-    <module>flavor-xwikiorg-main</module>
+    <!-- The flavor for the main wiki is not yet well defined. -->
+    <!-- <module>flavor-xwikiorg-main</module> -->
     <module>flavor-xwikiorg-subwiki</module>
   </modules>
   <build>
