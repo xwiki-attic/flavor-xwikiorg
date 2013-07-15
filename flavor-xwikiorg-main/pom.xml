@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>flavor-xwikiorg</artifactId>
-    <version>4.5.2-SNAPSHOT</version>
+    <version>5.1-SNAPSHOT</version>
   </parent>
   <artifactId>flavor-xwikiorg-main</artifactId>
   <name>XWiki.org Flavor - Main Wiki</name>
