@@ -31,7 +31,7 @@
   </parent>
   <groupId>org.xwiki.contrib</groupId>
   <artifactId>flavor-xwikiorg</artifactId>
-  <version>5.1-SNAPSHOT</version>
+  <version>5.1</version>
   <name>XWiki.org Flavor - Parent POM</name>
   <packaging>pom</packaging>
   <description>The XWiki flavor used on xwiki.org</description>
@@ -39,7 +39,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/flavor-xwikiorg.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/flavor-xwikiorg.git</developerConnection>
     <url>https://github.com/xwiki-contrib/flavor-xwikiorg</url>
-    <tag>HEAD</tag>
+    <tag>flavor-xwikiorg-5.1</tag>
   </scm>
   <distributionManagement>
     <repository>
