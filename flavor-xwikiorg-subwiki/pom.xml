@@ -34,8 +34,9 @@
   <packaging>xar</packaging>
   <description>The group of applications that are installed by default on a subwiki of xwiki.org</description>
   <dependencies>
-    <!-- Put administration ui first to have default users and rights imported before most of the other pages
+    <!-- Note 1: Put administration ui first to have default users and rights imported before most of the other pages
       in case some of them needs to be checked for special right like wiki components etc. -->
+    <!-- Note 2: We don't install the Search extension since we redirect to the Search of the main wiki for subwikis -->
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-administration-ui</artifactId>
