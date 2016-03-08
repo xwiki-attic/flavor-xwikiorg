@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>flavor-xwikiorg</artifactId>
-    <version>7.1.2-SNAPSHOT</version>
+    <version>7.4.2-SNAPSHOT</version>
   </parent>
   <artifactId>flavor-xwikiorg-subwiki</artifactId>
   <name>XWiki.org Flavor - Subwiki</name>
@@ -147,7 +147,7 @@
     </dependency>
     <dependency>
       <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-flamingo-theme</artifactId>
+      <artifactId>xwiki-platform-flamingo-theme-bootswatch</artifactId>
       <version>${platform.version}</version>
       <type>xar</type>
     </dependency>

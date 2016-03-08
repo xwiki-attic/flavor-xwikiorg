@@ -27,11 +27,11 @@
   <parent>
     <groupId>org.xwiki.commons</groupId>
     <artifactId>xwiki-commons-pom</artifactId>
-    <version>7.1.1</version>
+    <version>7.4.2</version>
   </parent>
   <groupId>org.xwiki.contrib</groupId>
   <artifactId>flavor-xwikiorg</artifactId>
-  <version>7.1.2-SNAPSHOT</version>
+  <version>7.4.2-SNAPSHOT</version>
   <name>XWiki.org Flavor - Parent POM</name>
   <packaging>pom</packaging>
   <description>The XWiki flavor used on xwiki.org</description>
@@ -41,6 +41,12 @@
     <url>https://github.com/xwiki-contrib/flavor-xwikiorg</url>
     <tag>HEAD</tag>
   </scm>
+  <developers>
+    <developer>
+      <id>vmassol</id>
+      <name>Vincent Massol</name>
+    </developer>
+  </developers>
   <distributionManagement>
     <repository>
       <id>xwiki-staging</id>
