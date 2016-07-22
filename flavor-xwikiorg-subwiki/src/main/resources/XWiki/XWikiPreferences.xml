@@ -403,6 +403,21 @@
       <validationRegExp/>
       <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
     </guest_comment_requires_captcha>
+    <iconTheme>
+      <cache>0</cache>
+      <disabled>0</disabled>
+      <displayType>select</displayType>
+      <multiSelect>0</multiSelect>
+      <name>iconTheme</name>
+      <number>60</number>
+      <prettyName>Icon theme</prettyName>
+      <relationalStorage>0</relationalStorage>
+      <separator> </separator>
+      <size>1</size>
+      <sql>select doc.fullName, propName.value from XWikiDocument as doc, BaseObject as theme, StringProperty propName where doc.fullName=theme.name and theme.className='IconThemesCode.IconThemeClass' and doc.fullName&lt;&gt;'IconThemesCode.IconThemeTemplate' and theme.id = propName.id and propName.name = 'name'</sql>
+      <unmodifiable>0</unmodifiable>
+      <classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
+    </iconTheme>
     <invitation_email_content>
       <contenttype>FullyRenderedText</contenttype>
       <customDisplay/>
@@ -1969,6 +1984,21 @@
         <validationRegExp/>
         <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
       </guest_comment_requires_captcha>
+      <iconTheme>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>iconTheme</name>
+        <number>60</number>
+        <prettyName>Icon theme</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <size>1</size>
+        <sql>select doc.fullName, propName.value from XWikiDocument as doc, BaseObject as theme, StringProperty propName where doc.fullName=theme.name and theme.className='IconThemesCode.IconThemeClass' and doc.fullName&lt;&gt;'IconThemesCode.IconThemeTemplate' and theme.id = propName.id and propName.name = 'name'</sql>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
+      </iconTheme>
       <invitation_email_content>
         <contenttype>FullyRenderedText</contenttype>
         <customDisplay/>
@@ -2785,6 +2815,9 @@ Your account on ${wikiname} has been successfully activated. You can now login a
     </property>
     <property>
       <editor>Wysiwyg</editor>
+    </property>
+    <property>
+      <iconTheme>IconThemes.FontAwesome</iconTheme>
     </property>
     <property>
       <invitation_email_content/>
