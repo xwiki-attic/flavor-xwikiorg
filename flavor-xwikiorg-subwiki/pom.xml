@@ -27,79 +27,23 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>flavor-xwikiorg</artifactId>
-    <version>7.4.3-SNAPSHOT</version>
+    <version>8.2.1-SNAPSHOT</version>
   </parent>
   <artifactId>flavor-xwikiorg-subwiki</artifactId>
   <name>XWiki.org Flavor - Subwiki</name>
   <packaging>xar</packaging>
   <description>The group of applications that are installed by default on a subwiki of xwiki.org</description>
   <dependencies>
-    <!-- Note 1: Put administration ui first to have default users and rights imported before most of the other pages
-      in case some of them needs to be checked for special right like wiki components etc. -->
-    <!-- Note 2: We don't install the Search extension since we redirect to the Search of the main wiki for subwikis -->
     <dependency>
       <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-administration-ui</artifactId>
+      <artifactId>xwiki-platform-distribution-flavor</artifactId>
       <version>${platform.version}</version>
       <type>xar</type>
     </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-skin-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-livetable-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-index-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-panels-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-watchlist-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-tag-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-annotation-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
+
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-rendering-wikimacro-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-extension-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-sheet-ui</artifactId>
       <version>${platform.version}</version>
       <type>xar</type>
     </dependency>
@@ -123,44 +67,25 @@
     </dependency>
     <dependency>
       <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-colorthemes-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-wysiwyg-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-icon-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-icon-fontawesome</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-flamingo-theme-bootswatch</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-xclass-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-sharepage-ui</artifactId>
       <version>${platform.version}</version>
+      <type>xar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.xwiki.platform</groupId>
+      <artifactId>xwiki-platform-rendering-ui</artifactId>
+      <version>${platform.version}</version>
+      <type>xar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.xwiki.contrib.templates</groupId>
+      <artifactId>application-templates-ui</artifactId>
+      <type>xar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.xwiki.contrib</groupId>
+      <artifactId>application-ckeditor-ui</artifactId>
+      <version>1.8.3</version>
       <type>xar</type>
     </dependency>
     <dependency>
@@ -172,18 +97,6 @@
     <dependency>
       <groupId>org.xwiki.platform</groupId>
       <artifactId>xwiki-platform-wiki-ui-wiki</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-refactoring-ui</artifactId>
-      <version>${platform.version}</version>
-      <type>xar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.xwiki.platform</groupId>
-      <artifactId>xwiki-platform-help-ui</artifactId>
       <version>${platform.version}</version>
       <type>xar</type>
     </dependency>
